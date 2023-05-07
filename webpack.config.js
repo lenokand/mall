@@ -13,7 +13,7 @@ module.exports = {
     mode: 'development',
     devServer: {
         open: true,
-        port: 8083,
+        port: 8080,
         contentBase: path.join(__dirname, 'src'),
         watchContentBase: true,
     },
