@@ -29,6 +29,18 @@
         //   freeMode: true,
         
       });
+      var SpecialsSwiper = new Swiper(".specials-swiper", {
+        
+          clickable: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            // renderBullet: function (index, className) {
+            //   return '<span class="' + className + '">' + (index + 1) + "</span>" : '<span class="' + className + '">' +'0' + (index + 1) + "</span>" ;
+            // },
+          },
+        
+      });
 
 
 
