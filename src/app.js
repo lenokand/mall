@@ -1,3 +1,5 @@
+import { Datepicker } from 'vanillajs-datepicker'; 
+
     // запрет перемещения модального окна
     if(document.querySelector('[href="#modal-call"]')){
         const filterGallary2 = Fancybox.bind('[href="#modal-call"]', {
@@ -129,3 +131,7 @@
 //   });
 // });
 
+const elem = document.getElementById('actions-menu-date-calendar');
+const datepicker = new Datepicker(elem, {
+  // ...настройки
+});
