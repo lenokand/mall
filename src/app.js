@@ -43,6 +43,17 @@ import { Datepicker } from 'vanillajs-datepicker';
           },
         
       });
+      var FirmsSwiper = new Swiper(".firms-swiper", {
+          slidesPerView:3,
+          clickable: true,
+          spaceBetween: 20,
+          scrollbar: {
+            el: ".swiper-scrollbar",
+            dragSize:200,
+          },
+       
+        
+      });
 
 
 
