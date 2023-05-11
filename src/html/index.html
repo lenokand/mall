@@ -2080,7 +2080,7 @@
 
                         tc-shhelkovo@ru
                 </div>
-                <a href="" class="tenant-left_card_modal">
+                <a href="#modal-wright"  data-touch="false" data-fancybox  class="tenant-left_card_modal">
                     Написать нам
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <mask id="mask0_401_2469" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="14" height="14">
@@ -2443,21 +2443,90 @@
 <div class="modals">
     <div id="modal-call">
         <div class="modal-title">
-            Заполните заявку
-            <b>
-                и мы свяжемся с вами    </b>
+            Перезвоните мне
           
         </div>
         <form action="" method="post">
             <input type="text" name="name" placeholder="Ваше имя">
-            <input type="text" name="telmodal" class="tel" placeholder="Ваш телефон">
-         
-            <button type="submit" class="main-btn">
-                отправить заявку
-            </button>
+            <input type="text" name="telmodal" class="tel" placeholder="+7 (___) ___ ____">
             <div class="button-sign">
-                Нажимая на кнопку, Вы соглашаетесь с условиями <br> <a href="">обработки персональных данных</a> 
+                <label for="custom-checkbox1">
+
+                    <input id="custom-checkbox1" class="custom-checkbox" type="checkbox" name="agreement"
+                        value="Согласие на обработку персональных данных " required="required" checked>
+
+                    <div class="custom_chk"> 
+                        <div class="custom_chk--sq"></div>    
+                    </div>
+                    Согласие на обработку персональных данных 
+                </label>
+                <!-- <label for="" class="button-sign_label">
+                    <input type="checkbox"  >
+                    <div class="custom-check-icon"></div>
+                    
+                </label> -->
+
+                
             </div>
+            <button type="submit" class="main-btn">
+                Отправить 
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <mask id="mask0_1256_1082" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="14" height="14">
+                    <path d="M9.53674e-07 14V9.53674e-07H14V14H9.53674e-07Z" fill="white"/>
+                    </mask>
+                    <g mask="url(#mask0_1256_1082)">
+                    <path d="M10.8954 6.99993L4.45366 13.4417L3.1046 12.0926L8.1973 6.99993L3.1046 1.90726L4.45366 0.558205L10.8954 6.99993Z" stroke="white" stroke-miterlimit="10"/>
+                    </g>
+                    </svg>
+                    
+            </button>
+           
+           
+
+        </form>
+    </div>
+    <div id="modal-wright">
+        <div class="modal-title">
+            Напишите нам
+          
+        </div>
+        <form action="" method="post">
+            <input type="text" name="name" placeholder="Ваше имя">
+            <input type="text" name="telmodal" class="tel" placeholder="+7 (___) ___ ____">
+            <input type="text" name="email" placeholder="Email">
+            <textarea type="text" name="text" placeholder="" rows="4" cols="50" value="">Ваше сообщение</textarea>
+            <div class="button-sign">
+                <label for="custom-checkbox1">
+
+                    <input id="custom-checkbox1" class="custom-checkbox" type="checkbox" name="agreement"
+                        value="Согласие на обработку персональных данных " required="required" checked>
+
+                    <div class="custom_chk"> 
+                        <div class="custom_chk--sq"></div>    
+                    </div>
+                    Согласие на обработку персональных данных 
+                </label>
+                <!-- <label for="" class="button-sign_label">
+                    <input type="checkbox"  >
+                    <div class="custom-check-icon"></div>
+                    
+                </label> -->
+
+                
+            </div>
+            <button type="submit" class="main-btn">
+                Отправить 
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <mask id="mask0_1256_1082" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="14" height="14">
+                    <path d="M9.53674e-07 14V9.53674e-07H14V14H9.53674e-07Z" fill="white"/>
+                    </mask>
+                    <g mask="url(#mask0_1256_1082)">
+                    <path d="M10.8954 6.99993L4.45366 13.4417L3.1046 12.0926L8.1973 6.99993L3.1046 1.90726L4.45366 0.558205L10.8954 6.99993Z" stroke="white" stroke-miterlimit="10"/>
+                    </g>
+                    </svg>
+                    
+            </button>
+           
            
 
         </form>

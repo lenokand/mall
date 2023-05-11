@@ -1737,78 +1737,186 @@ menu{
 
 /*  */
 
-#modal-call{
+#modal-call, #modal-wright{
     display: none;
-    padding-left: 45px;
-    padding-right: 45px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background: #1F1F1F;
-    border-radius: 8px 0px 8px 8px;
-    max-width: 440px;
+    padding: 37px 40px ; 
+    background: #F6F7FB;
+    border-radius: 40px;
+ width: 100%;
+    max-width: 400px;
     .modal-title {
-        font-family: TT Norms Pro;
-        font-style: normal;
+        font-family: 'Unbounded';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
 
-        font-size: 30px;
-        line-height: 36px;
-        text-align: center;
+letter-spacing: 0.04em;
 
-        color: #fff;
-        margin-bottom: 45px;
+/* black */
+
+color: #121212;
+margin-bottom: 18px;
 
     }
 
     form {
         display: flex;
         flex-direction: column;
+        align-items:center;
+        justify-content:center;
     }
 
    
 
-    input {
-        margin-bottom: 15px;
-        background: #F4F4F4;
+    input, textarea {
+        caret-color: #F42D26;
+        background: #FFFFFF;
+        /* Gray 5 */
+        
+        border: 1px solid #E0E0E0;
         border-radius: 10px;
-        display: block;
-        border: none;
-        padding: 36px 28px;
-
-        &::placeholder {
-            font-family: TT Norms Pro;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 18px;
-            line-height: 22px;
-            color: #929292;
+        outline: none;
+        resize: none;
+      width: 100%;
+        padding: 13px 19px;
+        margin-bottom: 10px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        /* identical to box height, or 171% */
+        
+        
+        /* gray midle */
+        
+        color: #6B6B6B;
+        &:focus {
+            border: 1px solid #F42D26;
         }
     }
 
     .main-btn {
-        margin-bottom: 15px;
-        width: 100%;
+        background: #E20613;
+        border-radius: 40px;
+    width: 100%;
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    /* identical to box height, or 167% */
+    cursor: pointer;
+    letter-spacing: 0.04em;
+    padding: 18px 100px;
+    outline: none;
+    border: none;
+    /* white */
+
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    svg{
+        margin-left: 14px;
+    }    
     }
-    .button-sign{
+ 
+    // кастомизированный чекбокс
+
+
+    .custom-checkbox {
+      /* margin-bottom: 0; */
+      opacity: 0;
+      position: absolute;
+
+
+      ~.custom_chk {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            margin-right: 10px;
+            background: rgba(250, 250, 250, 0.6);
+            border-radius: 4px;
+           
+
+            .custom_chk--sq{
+                background: #F42D26;
+                border-radius: 4px;
+                opacity: 0;
+                width: 12px;
+                height: 12px;
+            }
+      }
+
+      &:checked {
+       
+       ~.custom_chk{
+       
+            .custom_chk--sq{
+              
+                opacity: 1;
+               
+            }
+        }
+
+      }
+
+    }
+
+    label {
+
+        font-family: 'Commissioner';
         font-style: normal;
-        font-weight: 400;
+        font-weight: 300;
         font-size: 12px;
         line-height: 16px;
-      
+        /* identical to box height, or 133% */
+        
+        
+        /* gray midle */
+        
+        color: #6B6B6B;
+      align-self: center;
+      display: flex;
+      align-items: baseline;
+      position: relative;
+        /* width: 90%; */
+        margin: auto;
 
-        text-align: center;
 
+    }
 
-        color: #FFFFFF;
-        a{
-            color: #FFD900;
+    .button-sign{
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 16px;
+        /* identical to box height, or 133% */
+        cursor: pointer;
+        
+        /* gray midle */
+        
+        color: #6B6B6B;
+        margin-bottom: 10px;
+        &_label{
+            display: flex;
+            align-items: center;
+            width: 90%;
         }
             }
-        .carousel__button.is-close{
-            top: 0;
-            right: -40px;
-            background: #FFD900;
-            border-radius: 0px 8px 8px 0px;
-            color: #121212;
+    .carousel__button.is-close{
+            top: 28px;
+            right: 28px;
+            background: none;
+            /* border-radius: 0px 8px 8px 0px; */
+            color: #959595;
         }
 }
 
