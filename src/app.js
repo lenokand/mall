@@ -1,4 +1,4 @@
-import { Datepicker } from 'vanillajs-datepicker'; 
+// import { Datepicker } from 'vanillajs-datepicker'; 
 
     // запрет перемещения модального окна
     if(document.querySelector('[href="#modal-call"]')){
@@ -18,7 +18,7 @@ import { Datepicker } from 'vanillajs-datepicker';
           el: ".swiper-pagination",
           clickable: true,
           renderBullet: function (index, className) {
-            return (index > 8 ) ? '<span class="' + className + '">' + (index + 1) + "</span>" : '<span class="' + className + '">' +'0' + (index + 1) + "</span>" ;
+            return (index > 8 ) ? '<div class="' + className + '">'+'<span>' + (index + 1) +'<span/>' + "</div>" : '<div class="' + className + '">' + '<span>' +'0' + (index + 1) +'<span/>' + "</div>" ;
           },
         },
       });
@@ -51,9 +51,56 @@ import { Datepicker } from 'vanillajs-datepicker';
             el: ".swiper-scrollbar",
             dragSize:200,
           },
-       
+          breakpoints: {
+            // when window width is >= 320px
+            320: {
+              slidesPerView:2,
+              spaceBetween: 8,
+            },
+            // when window width is >= 640px
+            960: {
+              slidesPerView:3,
+              spaceBetween: 20,
+            }
+          }
         
       });
+
+
+      window.addEventListener('resize', checkWidth);
+      checkWidth();
+      
+      function checkWidth() {
+        console.log(window.innerWidth);
+        // console.log(getComputedStyle(document.documentElement).getPropertyValue('--is-thewidth'));
+
+
+
+      //   if(window.innerWidth <= 960 ){
+
+
+      //     var TabsSwiper = new Swiper(".tabs-swiper", {
+      //       slidesPerView:2,
+      //       clickable: true,
+      //       spaceBetween: 20,
+      //       scrollbar: {
+      //         el: ".swiper-scrollbar",
+      //         dragSize:200,
+      //       },
+          
+      //   });
+      //  }
+       
+
+
+      }
+
+
+
+    
+      
+
+ 
 
 
 
@@ -129,18 +176,18 @@ import { Datepicker } from 'vanillajs-datepicker';
 
         // бургер меню
 
-// const icons = document.querySelectorAll('.burger');
-// const header = document.querySelector('menu');
-// const body = document.querySelector('body');
-// icons.forEach (icon => {  
-//   icon.addEventListener('click', (event) => {
-//     icon.classList.toggle("open");
-//     header.classList.toggle("open");
+const icons = document.querySelectorAll('.burger');
+const header = document.querySelector('.menu-bottom_container');
+const body = document.querySelector('body');
+icons.forEach (icon => {  
+  icon.addEventListener('click', (event) => {
+    icon.classList.toggle("open");
+    header.classList.toggle("open");
     
-//     body.classList.toggle("open");
+    body.classList.toggle("open");
 
-//   });
-// });
+  });
+});
 
 // const elem = document.getElementById('actions-menu-date-calendar');
 // const datepicker = new Datepicker(elem, {
