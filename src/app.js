@@ -76,20 +76,20 @@
 
 
 
-      //   if(window.innerWidth <= 960 ){
+        if(window.innerWidth <= 660 ){
 
 
-      //     var TabsSwiper = new Swiper(".tabs-swiper", {
-      //       slidesPerView:2,
-      //       clickable: true,
-      //       spaceBetween: 20,
-      //       scrollbar: {
-      //         el: ".swiper-scrollbar",
-      //         dragSize:200,
-      //       },
+          var TabsSwiper = new Swiper(".tabs-swiper", {
+            slidesPerView: 'auto',
+            // clickable: true,
+            // spaceBetween: 20,
+            scrollbar: {
+              el: ".swiper-scrollbar",
+              dragSize:80,
+            },
           
-      //   });
-      //  }
+        });
+       }
        
 
 
