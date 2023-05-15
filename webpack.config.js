@@ -57,8 +57,13 @@ module.exports = {
             inject: 'body'
         }),
         new HtmlWebpackPlugin({
-            filename: 'renter.html',
-            template: './src/html/renter.html',
+            filename: 'renters.html',
+            template: './src/html/renters.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'renter_page.html',
+            template: './src/html/renter_page.html',
             inject: 'body'
         }),
     ],
