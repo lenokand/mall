@@ -79,7 +79,7 @@
         if(window.innerWidth <= 660 ){
 
 
-          var TabsSwiper = new Swiper(".tabs-swiper", {
+          var TabsSwiper = new Swiper(".tabs-swiper_adaptiv", {
             slidesPerView: 'auto',
             // clickable: true,
             // spaceBetween: 20,

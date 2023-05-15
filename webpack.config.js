@@ -51,6 +51,11 @@ module.exports = {
             template: './src/html/404.html',
             inject: 'body'
         }),
+        new HtmlWebpackPlugin({
+            filename: 'byers.html',
+            template: './src/html/byers.html',
+            inject: 'body'
+        }),
     ],
     module: {
         rules: [

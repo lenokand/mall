@@ -4,6 +4,7 @@
 body{
     font-family: serif;
     &.open{ overflow:hidden}
+    min-height: 100vh;
 }
 input:focus{
     outline: none;
@@ -308,6 +309,11 @@ menu{
         /* animation: 320ms ease; */
     }
 }
+
+.byers-page .numbers{
+    margin-top: 80px;
+}
+
 .numbers{
     background: #26428C;
     padding-top:26px ;
@@ -1964,6 +1970,7 @@ margin-bottom: 18px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        box-sizing: border-box;
     }
    
   
@@ -2061,7 +2068,49 @@ margin-bottom: 18px;
 
     }
 }
+.byers-block{
+    min-height: 500px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    .container-sm{
+        /* display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start; */
+    }
 
+}
+.byers-block_title{font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 52px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    }
+    .byers-block_text{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 42px;
+        color: #FFFFFF;
+        width: 76%;
+
+    }
+.byers-block-img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+}
 
 /* adaptiv */
 
@@ -2320,6 +2369,14 @@ margin-bottom: 18px;
     
 }
 @media screen and (max-width:960px) {
+    .byers-block_title{
+        font-size: 37px;
+        line-height: 47px;
+    }
+    .byers-block_text{
+        font-size: 27px;
+    line-height: 37px;
+    }
     .footer .container-sm{
         flex-wrap: wrap;
     }
@@ -2469,6 +2526,7 @@ align-items: stretch;
     
        
     }
+   
     .tabs-swiper{
         margin-bottom: 13px;
     }
@@ -2877,7 +2935,9 @@ line-height: 18px;
 
 }
 
-
+.tabs-swiper_adaptiv{
+    display: none;
+}
 @media screen and (max-width:660px) {
 
 .error-page-image img{
@@ -3508,5 +3568,43 @@ display: block;
     }
 .footer .map-contact_tel .card_mod{
         text-decoration: underline;
+    }
+    .byers-block{
+        min-height: 300px;
+    }
+    .byers-block_title{
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .byers-block_text{
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+    .tabs-swiper{
+        display: none;
+    }
+    .tabs-swiper_adaptiv{
+        display: block;
+    }
+    .byers-page .numbers {
+        padding: 14px 20px ;
+        margin-top: 40px;
+        background: #26428C;
+        .numbers-item_bottom, .numbers-item_top{
+            color: #fff;
+        }
+       .numbers-item:first-child {
+            border-right: 1px solid #51659C;
+            border-bottom: 1px solid #51659C;
+        }
+        .numbers .numbers-item:last-child {
+            border-left: 1px solid #51659C;
+            border-top: 1px solid #51659C;
+        }
     }
 }
